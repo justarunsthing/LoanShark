@@ -5,16 +5,18 @@
     --white-color: #DFF3E4;
 }
 
-body {
-    color: var(--dark-color);
+.theme-color {
+    background-color: #5E00AB;
 }
 
-nav {
-    background-color: var(--dark-color);
+.action {
+    background-color: var(--secondary-color);
 }
 
-footer {
-    background-color: var(--dark-color);
+.action:hover {
+    background-color: #4B4B4B;
+    border: 2px solid #1B1B1B;
+    box-shadow: 0 0 10px rgba(41, 41, 41, 0.35);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -64,15 +66,11 @@ main>.container {
 }
 
 .checklist >li i{
-    color: var(--secondary-color);
+    color: var(--dark-color);
 }
 
 code[class*="language-"], pre[class*="language-"] {
     white-space: pre-wrap;
     word-break: break-all;
     word-wrap: break-word;
-}
-
-.theme-color {
-    background-color: #5E00AB;
 }
