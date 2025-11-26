@@ -16,3 +16,7 @@ function getValues() {
     document.getElementById("total-cost").innerHTML = `Total cost: ${totalCost}`;
 
 }
+
+// Set date
+const currentYear = new Date().getFullYear();
+document.getElementById("year").textContent = `©${currentYear}`;
