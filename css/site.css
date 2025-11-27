@@ -74,3 +74,20 @@ code[class*="language-"], pre[class*="language-"] {
     word-break: break-all;
     word-wrap: break-word;
 }
+
+#payment-title {
+    text-align: center;
+    font-size: 1.5rem;
+    font-style: italic;
+}
+
+#payment {
+    text-align: center;
+    font-size: 4rem;
+    font-weight: bold;
+    color: #2B404F;
+}
+
+#total-cost {
+    font-weight: bold;
+}
