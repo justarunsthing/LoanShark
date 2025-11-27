@@ -5,7 +5,6 @@ function getValues() {
 
     const loan = calculateLoan(amount, rate, term);
 
-    // Output results
     document.getElementById("payment").innerHTML = `£ ${loan.payment.toFixed(2)}`;
     document.getElementById("total-principal").innerHTML = `£ ${loan.amount.toFixed(2)}`;
     document.getElementById("total-interest").innerHTML = `£ ${loan.totalInterest.toFixed(2)}`;
@@ -72,10 +71,10 @@ function buildTable(payments) {
                 <td>£${p.balance.toFixed(2)}</td>
             </tr>
         `;
-        tbody.insertAdjacentHTML("beforeend", row); // Insert HTML without removing or recreating the element itself
+        tbody.insertAdjacentHTML("beforeend", row); // Inserts HTML without removing or recreating the element itself
     });
 
-    // Show the table
+    // Display table rows
     document.getElementById("schedule-table").classList.remove("d-none");
 }
 
