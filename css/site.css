@@ -91,3 +91,7 @@ code[class*="language-"], pre[class*="language-"] {
 #total-cost {
     font-weight: bold;
 }
+
+#table-header {
+    background-color: #2B404F;
+}

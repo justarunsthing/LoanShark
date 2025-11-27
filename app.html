@@ -47,26 +47,32 @@
             <div class="container">
                 <h1 class="mb-4">
                     Loan Shark
-                </h1>
+                </h1>              
                 <div class="row mb-5">
-                    <div class="col">
-                        <form>
-                            <div class="">
-                                <div class="col-12 form-group">
-                                    <label>Loan Amount:</label>
-                                    <input id="loan-amount" type="number" class="form-control" min="1000" step="500" value="15000" />
-                                    <label>Rate:</label>
-                                    <input id="interest-rate" type="number" class="form-control" min="0" step="0.1" value="3.5" />
-                                    <label>Term (In months):</label>
-                                    <input id="term" type="number" class="form-control" min="1" value="60" />
-                                </div>
-                            </div>
-                            <button id="btn-submit" type="submit" class="btn btn-lg mt-3 text-light action">
-                                Calculate
-                            </button>
-                        </form>
+                    <div class="col-sm-12 col-md-6">
+                        <div class="card shadow-sm">
+                            <div class="card-body bg-light">
+                                <form>
+                                    <div class="">
+                                        <div class="col-12 form-group">
+                                            <label>Loan Amount:</label>
+                                            <input id="loan-amount" type="number" class="form-control" min="1000" step="500" value="15000" />
+                                            <label>Rate:</label>
+                                            <input id="interest-rate" type="number" class="form-control" min="0" step="0.1" value="3.5" />
+                                            <label>Term (In months):</label>
+                                            <input id="term" type="number" class="form-control" min="1" value="60" />
+                                        </div>
+                                    </div>
+                                    <div class="d-flex justify-content-end mt-3">
+                                        <button id="btn-submit" type="button" class="btn btn-lg action text-light">
+                                            Calculate
+                                        </button>
+                                    </div>
+                                </form>
+                            </div> 
+                        </div>
                     </div>
-                    <div class="col">
+                    <div class="col-sm-12 col-md-6">
                         <div id="payment-title">
                             <p>Your monthly payment</p>
                         </div>
@@ -98,6 +104,25 @@
                             <div id="total-cost" class="col-6 text-center">
                                 £0.00
                             </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-5">
+                    <div class="col">
+                        <div class="table-responsive">
+                            <table id="schedule-table" class="table table-responsive table-striped table-hover d-none">
+                                <thead>
+                                    <tr>
+                                        <th>Month</th>
+                                        <th>Payment</th>
+                                        <th>Monthly Principal</th>
+                                        <th>Monthly Interest</th>
+                                        <th>Total Interest</th>
+                                        <th>Balance</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="schedule-body"></tbody>
+                            </table>
                         </div>
                     </div>
                 </div>
